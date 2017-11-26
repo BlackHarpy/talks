@@ -1,0 +1,36 @@
+/* Overrides for Reveal CSS */
+
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url('../fonts/PatrickHand-Regular.ttf');
+}
+
+.reveal {
+  font-family: 'Patrick Hand', cursive !important;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: 'Patrick Hand', cursive !important;  
+  text-transform: none !important;
+}
+
+/* Custom classes */
+.email-container {
+  display: flex;
+}
+
+.social-logo {
+  background: none !important;
+  width: 100px;
+  height: 100px;
+}
+.social-logo-small {
+  background: none !important;
+  width: 70px;
+  height: 70px;
+}
