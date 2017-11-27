@@ -19,6 +19,22 @@
   text-transform: none !important;
 }
 
+.reveal a:hover img {
+  background: none !important;
+  border-color: none !important;
+  box-shadow: none !important; 
+}
+
+.reveal pre {
+  width: 100%;
+  box-shadow: none;
+  line-height: 0.5em;
+}
+
+.reveal pre code {
+  line-height: 1.2em;
+}
+
 /* Custom classes */
 .email-container {
   display: flex;
