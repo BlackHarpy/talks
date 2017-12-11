@@ -51,12 +51,12 @@
 			</section>
 			<section>
 				<img class="plain title-img" src="images/titles/about-me.gif">
-				<img class="plain main-img" src="images/about-me.gif">				
+				<img class="plain main-img" src="images/about-me.gif">
 			</section>
 			<section>
-					<img class="plain title-img" src="images/titles/why.gif">
-					
-				<section  data-transition="slide-in fade-out">
+				<img class="plain title-img" src="images/titles/why.gif">
+
+				<section data-transition="slide-in fade-out">
 					<div class="centered">
 						<div style="display: flex">
 							<div class="slide-column">
@@ -71,38 +71,80 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</section>
-				
+
 				<section data-transition="fade-in slide-out">
-						<div class="centered">
-								<div style="display: flex">
-									<div class="slide-column">
-										<img class="plain main-logo-big" src="images/logos/happy-phaser-white.gif">
-										<p class="no-margin">Phaser 2.6.2</p>
-										<p class="no-margin">·</p>
-										<p class="no-margin">Phaser CE 2.9.2</p>
-									</div>
-									<div>
-										<img class="plain main-logo-big" src="images/logos/typescript-white.gif">
-										<p class="no-margin">ECMAScript 6+</p>
-									</div>
-								</div>
+					<div class="centered">
+						<div style="display: flex">
+							<div class="slide-column">
+								<img class="plain main-logo-big" src="images/logos/happy-phaser-white.gif">
+								<p class="no-margin">Phaser 2.6.2</p>
+								<p class="no-margin">·</p>
+								<p class="no-margin">Phaser CE 2.9.2</p>
 							</div>
+							<div>
+								<img class="plain main-logo-big" src="images/logos/typescript-white.gif">
+								<p class="no-margin">ECMAScript 6+</p>
+							</div>
+						</div>
+					</div>
 				</section>
-				
+				<section>
+					<div>
+						<img class="plain main-logo-medium" src="images/logos/typescript-white.gif">
+					</div>
+					<hr>
+					<div class="centered-spaced">
+						<div>
+							<img class="plain main-logo-medium" src="images/icons/types.gif">
+							<p class="no-margin">Tipado Fuerte</p>
+						</div>
+						<div>
+							<img class="plain main-logo-medium" src="images/icons/classes.gif">
+							<p class="no-margin">Clases e Interfaces</p>
+						</div>
+						<div>
+							<img class="plain main-logo-medium" src="images/icons/modules.gif">
+							<p class="no-margin">Módulos</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div>
+						<img class="plain main-logo-medium" src="images/logos/webpack-white.gif">
+					</div>
+					<hr>
+					<div class="centered-spaced">
+						<div>
+							<img class="plain main-logo-medium" src="images/icons/commonjs.gif">
+							<p class="no-margin">CommonJS</p>
+						</div>
+						<div>
+							<img class="plain main-logo-medium" src="images/icons/single-file.gif">
+							<p class="no-margin">Empaquetado</p>
+						</div>
+						<div>
+							<img class="plain main-logo-medium" src="images/icons/assets.gif">
+							<p class="no-margin">Manejo de Recursos</p>
+						</div>
+					</div>
+				</section>
+
 			</section>
 			<section>
-				<h2>¿Cómo?</h2>
-				<ul>
-					<li>Instalar paquetes</li>
-					<li>Configuración de TypeScript</li>
-					<li>Configuración de Webpack</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Instalar paquetes de Node</h2>
-				<pre>
+				<img class="plain title-img" src="images/titles/how.gif">
+				<section>
+					<ul>
+						<li>Instalar paquetes</li>
+						<li>Configuración de TypeScript</li>
+						<li>Configuración de Webpack</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Instalar paquetes de Node</h3>
+					<pre>
 						<code class="hljs" data-trim data-noescape>
 							<b>$</b> npm install 
 							<span class="fragment">      phaser-ce              <span class="hljs-comment"># Duh (Phaser Community Edition)</span>
@@ -113,64 +155,59 @@
 							<span class="fragment hljs-comment">  # Y el resto: servidor, minificado, manejo de imágenes y css, etc...</span>
 					</code>
 				</pre>
-			</section>
-			<section>
-				<h2>Configuración de TypeScript</h2>
-				<section>
-					<pre>
-									<div class="hljs-title">./tsconfig.json</div>
-										<code class="hljs" data-trim data-noescape>
-										
-										  {
-											    "compilerOptions": {
-												      "target": "es6",
-												      "module": "commonjs",
-												      "outDir": "dist",
-												      "sourceMap": true,
-												      "typeRoots": [ "./node_modules/@types" ]
-											    },
-											    "include": ["src/**/*.ts"],
-											    "exclude": ["node_modules"]
-										  }
-									</code>
-								</pre>
 				</section>
 				<section>
-					<p>Definición de Tipos para Phaser</p>
+					<h4>TypeScript · Archivo de configuración</h2>
+						<pre>
+							<div class="hljs-title">./tsconfig.json</div>
+								<code class="hljs" data-trim data-noescape>
+								
+								{
+								    "compilerOptions": {
+								        "target": "es6",
+								        "module": "commonjs",
+								        "outDir": "dist",
+								        "sourceMap": true,
+								        "typeRoots": [ "./node_modules/@types" ]
+								    },
+								    "include": ["src/**/*.ts"],
+								    "exclude": ["node_modules"]
+								}
+							</code>
+						</pre>
+				</section>
+				<section>
+					<h4>Typescript · Definición de Tipos para Phaser</h4>
 					<pre>
 											<div class="hljs-title">./src/scripts/app.ts</div>
 												<code class="hljs" data-trim>
 					/// &lt;reference path="../../node_modules/phaser-ce/typescript/phaser.d.ts"/&gt;
 					/// &lt;reference path="../../node_modules/phaser-ce/typescript/pixi.d.ts"/&gt;
 											</code>
-										</pre>
-				</section>
-			</section>
-
-			<section>
-				<h3>Configuración de Webpack</h3>
-				<section>
-					<p>Salida del bundle</p>
-					<pre>
-							<div class="hljs-title">./webpack.config.js</div>
-								<code class="hljs javascript" data-trim data-noescape>
-									const path = require('path')
-									
-									module.exports = {
-									    devtool: 'inline-source-map',
-									    entry: './src/scripts/app.ts',
-									    output: {
-									        filename: 'app.js',
-									        path: path.resolve(__dirname, 'dist')
-									    },
-									    //...
-									}
-							</code>
 						</pre>
 				</section>
 				<section>
-						<p>Alias para rutas</p>
-						<pre>
+					<h4>Webpack · Salida del bundle</h4>
+					<pre>
+						<div class="hljs-title">./webpack.config.js</div>
+							<code class="hljs javascript" data-trim data-noescape>
+								const path = require('path')
+								
+								module.exports = {
+								    devtool: 'inline-source-map',
+								    entry: './src/scripts/app.ts',
+								    output: {
+								        filename: 'app.js',
+								        path: path.resolve(__dirname, 'dist')
+								    },
+								    //...
+								}
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h4>Webpack · Alias para rutas</h4>
+					<pre>
 								<div class="hljs-title">./webpack.config.js</div>
 									<code class="hljs javascript" data-trim data-noescape>
 											const path = require('path')											
@@ -194,16 +231,16 @@
 											}
 								</code>
 							</pre>
-					</section>
-					
+				</section>
+
 				<section>
-						<p>Loaders</p>
-						<pre>
-								<div class="hljs-title">./webpack.config.js</div>
-									<code class="hljs javascript" data-trim data-noescape>
+					<h4>Webpack · Loaders</h4>
+					<pre>
+									<div class="hljs-title">./webpack.config.js</div>
+										<code class="hljs javascript" data-trim data-noescape>
 										//...															
 										module.exports = {
-										  //...
+										    //...
 										    module: {
 										        loaders: [{ test: /\.tsx?$/, loader: 'ts-loader' }, 
 										            { test: /pixi\.js/, use: ['expose-loader?PIXI'] },
@@ -214,12 +251,32 @@
 										    }
 										    //... Configuraciones Adicionales
 										}
+									</code>
+								</pre>
+				</section>
+				<section>
+					<h4>¡A importar!</h4>
+					<pre>
+									<div class="hljs-title">./src/scripts/app.ts</div>						
+									<code class="hljs typescript">
+/// &lt;reference path="../../node_modules/phaser-ce/typescript/phaser.d.ts"/&gt;
+/// &lt;reference path="../../node_modules/phaser-ce/typescript/pixi.d.ts"/&gt;
+				
+import 'pixi'
+import 'p2'
+import 'phaser'
+											
 								</code>
-							</pre>
-					</section>
+								</pre>
+				</section>
 			</section>
+
 			<section>
-				<h3>Y por último...</h3>
+				<img class="plain title-img" src="images/titles/and-now.gif">
+				<section>
+				<span class="fragment"><img class="plain gif-img" src="images/laptop-kitty.gif"></span>
+				</section>
+				<section>
 				<pre>
 					<div class="hljs-title">./src/scripts/app.ts</div>						
 					<code class="hljs typescript">
@@ -270,14 +327,9 @@ window.onload = () => {
 					</code>
 				</pre>
 			</section>
-
-			<section>
-
-				<h3>¿Y ahora?</h3>
-
 			</section>
 			<section>
-				¿Ver más?
+				<img class="plain title-img" src="images/titles/more.gif">
 			</section>
 
 		</div>
