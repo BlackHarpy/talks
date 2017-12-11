@@ -44,6 +44,11 @@
   background: none !important;  
 }
 
+.main-img {
+  background: none !important;  
+  height: 550px;  
+}
+
 .main-logo {
   background: none !important;
   width: 120px;
